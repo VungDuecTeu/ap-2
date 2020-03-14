@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {PlaylistRoutingModule} from './playlist-routing.module';
 import {TrackListComponent} from './track-list-page/track-list.component';
 import {TrackModule} from '../track/track.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {TrackModule} from '../track/track.module';
   imports: [
     CommonModule,
     PlaylistRoutingModule,
-    TrackModule
+    TrackModule,
+    FormsModule
   ]
 })
 export class PlaylistModule { }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TrackDTO {
+public class TrackDTO { // fields that are in our frontend
   private int id;
   private String name;
 }

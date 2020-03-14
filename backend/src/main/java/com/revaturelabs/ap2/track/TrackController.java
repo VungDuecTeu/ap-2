@@ -28,6 +28,7 @@ public class TrackController {
 
   @PostMapping
   public ResponseEntity<TrackDTO> createTrack(@RequestBody TrackDTO trackDTO) {
+	  System.out.println(trackDTO);
     return this.trackService.save(trackDTO)
         .map(dto -> ResponseEntity.created(URI.create("/track/" + dto.getId())).body(dto))
         .orElseGet(() -> ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build());
